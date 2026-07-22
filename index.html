@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>666 xk — Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BEM VINDO -->
+  <div class="welcome-overlay" id="welcome-overlay">
+    <div class="welcome-inner">
+      <p class="welcome-eyebrow">© 2026 666 xk</p>
+      <h1 class="welcome-title">BEM VINDO</h1>
+      <button type="button" class="btn-entrar" id="welcome-enter">→ ENTRAR</button>
+    </div>
+  </div>
+
+  <div class="bg-glow"></div>
+
+  <main class="page">
+
+    <!-- CANAL -->
+    <section class="channel">
+      <div class="avatar">
+        <span>666<br>xk</span>
+      </div>
+
+      <h1 class="channel-title">
+        <span class="hash">#</span><span class="num">666</span><span class="xk">xk</span>
+      </h1>
+
+      <p class="channel-desc">Canal oficial #6/6/6xk 🇬🇪.</p>
+
+      <div class="channel-meta">
+        <span class="dot"></span>
+        <span>Canal &middot; Downloads da Ordem</span>
+      </div>
+
+      <div class="channel-actions">
+        <span class="pill" id="games-count-pill">🎮 <span id="games-count">0</span> jogos</span>
+        <a href="https://whatsapp.com/channel/0029Vb8XsOg7dmeZYaHEhg3p" target="_blank" class="btn-entrar">💬 Entrar</a>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- CATALOGO -->
+    <section class="catalogo">
+      <h2 class="catalogo-title"><span class="scroll">📜</span> Catálogo</h2>
+
+      <input type="text" id="search-input" class="search-input" placeholder="Buscar jogo...">
+
+      <div class="select-wrap">
+        <select id="category-select" class="category-select">
+          <option value="todas">Todas</option>
+        </select>
+        <span class="select-arrow">⌄</span>
+      </div>
+
+      <div class="games-grid" id="games-grid"></div>
+      <p class="empty-msg" id="empty-msg" style="display:none;">Nenhum jogo encontrado.</p>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2026 666 xk — <span class="blink">_</span></p>
+    </footer>
+  </main>
+
+  <!-- PLAYER -->
+  <audio id="bg-audio" src="musica.mp3" loop preload="auto"></audio>
+
+  <button type="button" class="audio-bubble" id="audio-bubble" aria-label="Tocar/pausar música">
+    <span class="audio-bubble-ring"></span>
+    <span class="audio-bubble-icon" id="audio-bubble-icon">▶</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+                                   </html>
